@@ -19,6 +19,28 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+   background-color: rgb(175,218,230);
+   front-size: 60pt;
+   color: white;
+   border-radius: 2px;
+}
+
+QPushButton:hover{
+   background-color:rgb(251,241,215);
+   color: black;
+}
+
+QPushButton:pressed{
+   background-color: rgb(164,224,198);
+   color: black;
+}
+
+QLineEdit{
+    font-size: 48pt;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
