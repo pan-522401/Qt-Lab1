@@ -17,12 +17,12 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>计算器-潘丽萍-2024414300113</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QPushButton{
    background-color: rgb(175,218,230);
-   front-size: 60pt;
+   font-size: 36pt;
    color: white;
    border-radius: 2px;
 }
