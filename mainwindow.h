@@ -24,6 +24,8 @@ public:
     QStack<QString> operands;
     QStack<QString> opcodes;
     QMap<int, QPushButton*> digitBTNs;
+    QMap<int, QPushButton*> operatorBTNs;
+    QMap<int, QPushButton*> unaryBTNs;
 
     QString calculation(bool *ok = NULL);
 
@@ -31,6 +33,7 @@ private slots:
     void btnNumClicked();
     void btnBinaryOperatorClicked();
     void btnUnaryOperatorClicked();
+    void btnSignClicked();
 
     void on_btnPeriod_clicked();
 
@@ -38,9 +41,14 @@ private slots:
 
     void on_btnClear_clicked();
 
+    void on_btnClearAll_clicked();
+
     void on_btnEqual_clicked();
 
     virtual void keyPressEvent(QKeyEvent *event);
+
+protected:
+    virtual bool eventFilter(QObject *watched, QEvent *event);
 
 private:
     Ui::MainWindow *ui;
